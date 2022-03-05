@@ -14,7 +14,9 @@
     Rezultatul functiei:  355
     ...
 """
-# todo
+x = int(input("X= "))
+y = 3*x
+print("Rezultatul functiei: ", 3*(x**2)-4*y+4)
 
 """
 2. Creati un script care cere input de la utilizator cu numarul de carti pe care doreste 
@@ -24,8 +26,8 @@
    si creati o lista care sa contina aceste dictionare. Afisati dictionarele.
 
     Sample output: 
+    Cati carti doriti sa adaugati la lista? 2
 	======== Cartea 1 =========
-	Cati carti doriti sa adaugati la lista? 2
     Numele cartii: Inteligenta materiei
     Numele autorului: Constantin Dulcan
     Anul publicarii: 1992
@@ -40,13 +42,19 @@
     
     Process finished with exit code 0
 """
-nr = input("Cati carti doriti sa adaugati in biblioteca?")
+nr = input("Cati carti doriti sa adaugati in biblioteca?: ")
 lista_carti = []
 for i in range(int(nr)):
-   #  todo
-   pass
-
-print(lista_carti)
+   dictionar = {}
+   print(f" Cartea {i+1} ".center(50, '='))
+   dictionar['nume'] = input("Numele cartii: ")
+   dictionar['autor'] = input("Numele autorului: ")
+   dictionar['an'] = input("Anul publicarii: ")
+   lista_carti.append(dictionar)
+print("Cartile dvs sunt: ")
+for i in lista_carti:
+   print(f" Cartea {lista_carti.index(i) + 1} ".center(50, '='))
+   print(i)
 
 """
 3. Completati sciptul exercitiului anterior in felul urmator:
@@ -59,7 +67,8 @@ print(lista_carti)
     {'nume': 'Cosmos', 'autor': 'Carl Sagan', 'an': '1980'}
     Anul: 1990
     Inteligenta materiei a fost publicat dupa 1990.
-    
-    Process finished with exit code 0
 """
-# todo
+an = input("Anul: ")
+for i in lista_carti:
+   if int(i['an']) > int(an):
+      print(f"{i['nume']} a fost publicata dupa {an}")
