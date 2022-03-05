@@ -15,17 +15,19 @@
     ...
 """
 x = int(input("X= "))
-y = 3*x
-print("Rezultatul functiei: ", 3*(x**2)-4*y+4)
+def functie(x):
+   y = 3 * x
+   return 3*(x**2)-4*y+4
+print("Rezultatul functiei: ", functie(x))
 
 """
-2. Creati un script care cere input de la utilizator cu numarul de carti pe care doreste 
-   sa il adauge in biblioteca. 
-   Pentru fiecare carte pe care utilizatorul doreste sa o adauge, cere input cu numele 
-   cartii, autorul acesteia si anul publicarii. Creati cate un dictionar pentru fiecare carte 
+2. Creati un script care cere input de la utilizator cu numarul de carti pe care doreste
+   sa il adauge in biblioteca.
+   Pentru fiecare carte pe care utilizatorul doreste sa o adauge, cere input cu numele
+   cartii, autorul acesteia si anul publicarii. Creati cate un dictionar pentru fiecare carte
    si creati o lista care sa contina aceste dictionare. Afisati dictionarele.
 
-    Sample output: 
+    Sample output:
     Cati carti doriti sa adaugati la lista? 2
 	======== Cartea 1 =========
     Numele cartii: Inteligenta materiei
@@ -35,11 +37,11 @@ print("Rezultatul functiei: ", 3*(x**2)-4*y+4)
     Numele cartii: Cosmos
     Numele autorului: Carl Sagan
     Anul publicarii:1980
-    
-    Cartile dvs sunt: 
+
+    Cartile dvs sunt:
     {'nume': 'Inteligenta materiei', 'autor': 'Constantin Dulcan', 'an': '1992'}
     {'nume': 'Cosmos', 'autor': 'Carl Sagan', 'an': '1980'}
-    
+
     Process finished with exit code 0
 """
 nr = input("Cati carti doriti sa adaugati in biblioteca?: ")
@@ -58,11 +60,11 @@ for i in lista_carti:
 
 """
 3. Completati sciptul exercitiului anterior in felul urmator:
-      - Cereti input de la utilizator cu un an de publicatie si afisati toate cartile 
+      - Cereti input de la utilizator cu un an de publicatie si afisati toate cartile
         aparute dupa anul respectiv
 
 	Sample output:
-	Cartile dvs sunt: 
+	Cartile dvs sunt:
     {'nume': 'Inteligenta materiei', 'autor': 'Constantin Dulcan', 'an': '1992'}
     {'nume': 'Cosmos', 'autor': 'Carl Sagan', 'an': '1980'}
     Anul: 1990
