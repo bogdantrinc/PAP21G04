@@ -1,0 +1,9 @@
+HR/Maria Popescu/Manager/2020-07-12/7600.0
+HR/Anca Dimitrie/Contabil/2019-08-22/5400.0
+HR/Marian Cantemir/Talent reqruiter/2021-05-12/4200.0
+IT/Adrian Popa/IT Helpdesk/2018-09-11/5400.0
+IT/Adriana Milescu/Software Developer/2021-07-08/5700.0
+IT/Maria Popovici/Software Developer/2021-06-22/5780.0
+IT/Marius Petrila/DevOps Engineer/2018-07-12/6200.0
+IT/Alexandru Milea/Junior DevOps/2021-10-11/4200.0
+Hr/Maria test/haha/2021-02-03/2300.0
