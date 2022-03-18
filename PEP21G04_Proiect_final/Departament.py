@@ -3,7 +3,7 @@ class Departament:
 
     def __init__(self, nume_dep: str):
         self.nume_dep = nume_dep
-        # Departament.departamente.append(self.nume_dep)    # Am putea adauga in lista direct in constructor
+        # Departament.departamente.append(self)    # Am putea adauga in lista direct in constructor
 
     @classmethod
     def afisare_departamente(cls):
